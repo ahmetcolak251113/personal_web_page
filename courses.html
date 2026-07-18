@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Academic Work · Ahmet Çolak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<canvas id="graph-bg"></canvas>
+<div class="bg-vignette"></div>
+
+<div class="wrap">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="dot"></span>Ahmet Çolak</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımda</a></li>
+        <li><a href="courses.html" class="active" data-i18n="nav-courses">Akademik Çalışmalar</a></li>
+        <li><a href="projects.html" data-i18n="nav-projects">Projeler</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <a href="assets/cv/Ahmet_Colak_CV.pdf" target="_blank" class="btn btn-primary btn-sm" style="margin-left:20px;" data-i18n="nav-cv">CV İndir</a>
+      <button class="btn btn-ghost btn-sm" id="lang-toggle" data-lang="tr" style="margin-left:12px;">🇬🇧 EN</button>
+      <button class="nav-toggle" aria-label="Menu toggle">☰</button>
+    </div>
+  </nav>
+
+  <header class="hero container" style="min-height:50vh; padding-top:160px;">
+    <span class="eyebrow" data-i18n="courses-eyebrow">Akademik Çalışmalar</span>
+    <h1><span data-i18n="courses-title-part1">Tez, Raporlar</span> <span class="gradient-text" data-i18n="courses-title-part2">ve Dersler</span></h1>
+    <p class="lead" data-i18n="courses-lead">Yüksek lisans tezim, doktora ders raporları ve aldığım derslerin tam listesi.</p>
+  </header>
+
+  <section class="section container reveal" style="border-top:none; padding-top:0;">
+
+    <!-- MASTER'S THESIS -->
+    <div style="margin-bottom:48px;">
+      <h2 class="eyebrow" style="font-size:1.6rem; color:var(--text-primary); margin-bottom:16px;" data-i18n="courses-thesis-title">Yüksek Lisans Tezi</h2>
+      <div class="card" style="border-color:var(--accent-cyan);">
+        <span class="note-code">MSc Thesis · 2026</span>
+        <h3 data-i18n="thesis-title">Çizge Teorisi ile Karmaşık Sistemlerin Zedelenebilirlik Analizi: Baskınlık Yaklaşımı</h3>
+        <p data-i18n="thesis-abstract">Bu tezde, orta ve merkezi çizgeler ile altıgen kaktüs zincirleri üzerinde kısıtlı ayrık baskınlık sayısı incelenmiş; kesin formüller ve sınırlar elde edilmiştir. Ayrıca herhangi bir çizge için kaba kuvvet algoritması sunulmuştur.</p>
+        <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap;">
+          <span class="tag" data-i18n="thesis-tag1">Çizge Teorisi</span>
+          <span class="tag" data-i18n="thesis-tag2">Baskınlık</span>
+          <span class="tag" data-i18n="thesis-tag3">Altıgen Kaktüs</span>
+          <span class="tag" data-i18n="thesis-tag4">Orta/Merkezi Çizgeler</span>
+        </div>
+        <a href="assets/documents/Ahmet_Colak_MSc_Thesis.pdf" target="_blank" class="btn btn-primary btn-sm" style="margin-top:16px;" data-i18n="thesis-download">Tezi İndir (PDF)</a>
+      </div>
+    </div>
+
+    <!-- PhD COURSE PROJECT REPORTS -->
+    <div style="margin-bottom:48px;">
+      <h2 class="eyebrow" style="font-size:1.6rem; color:var(--text-primary); margin-bottom:16px;" data-i18n="courses-reports-title">Doktora Ders Projesi Raporları</h2>
+      <div class="grid grid-2">
+        <div class="card" style="border-color:var(--accent-violet);">
+          <span class="note-code">Çizge Teorisinde Ölçüm Parametreleri · 2026</span>
+          <h3 data-i18n="report1-title">RDD Tabanlı Topolojik Maskeleme</h3>
+          <p data-i18n="report1-desc">GNN'lerde aşırı düzleştirme problemini deterministik Kısıtlı Ayrık Baskınlık (RDD) ile çözen topolojik maskeleme yöntemi. Heterofilik graflarda (WebKB Texas) %68 doğruluk ve kararlı yakınsama sağlanmış, homofilik graflarda (ZINC12k) sınırlı kaldığı gösterilmiştir.</p>
+          <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+            <span class="tag" data-i18n="report1-tag1">RDD</span>
+            <span class="tag" data-i18n="report1-tag2">GNN</span>
+            <span class="tag" data-i18n="report1-tag3">Heterofili</span>
+            <span class="tag" data-i18n="report1-tag4">Oversmoothing</span>
+          </div>
+          <a href="assets/documents/Ahmet_Colak_RDD_Topological_Masking.pdf" target="_blank" class="btn btn-ghost btn-sm" style="margin-top:16px;" data-i18n="report-download">Raporu İndir (PDF)</a>
+        </div>
+        <div class="card" style="border-color:var(--accent-blue);">
+          <span class="note-code">Cebirsel Çizge Algoritmaları · 2026</span>
+          <h3 data-i18n="report2-title">Cebirsel Değişmezler ve GNN Gömülerinin Hibrit Füzyonu</h3>
+          <p data-i18n="report2-desc">GNN kodlayıcı gömüleri ile normalize Laplacian özdeğerlerini birleştiren hibrit füzyonun eleştirel analizi. Düğüm-düzeyi heterofilik görevlerde broadcast spektral vektörün çoğunluk sınıfı çöküşüne yol açtığı; hibrit füzyonun GNN-yalnız performansını aşamadığı matematiksel ve deneysel olarak gösterilmiştir.</p>
+          <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+            <span class="tag" data-i18n="report2-tag1">Spektral Graf Teorisi</span>
+            <span class="tag" data-i18n="report2-tag2">GNN</span>
+            <span class="tag" data-i18n="report2-tag3">Hibrit Füzyon</span>
+            <span class="tag" data-i18n="report2-tag4">Laplacian</span>
+          </div>
+          <a href="assets/documents/Ahmet_Colak_Algebraic_Graph_Invariants_GNN_Fusion.pdf" target="_blank" class="btn btn-ghost btn-sm" style="margin-top:16px;" data-i18n="report-download">Raporu İndir (PDF)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COURSE LIST -->
+    <div>
+      <h2 class="eyebrow" style="font-size:1.6rem; color:var(--text-primary); margin-bottom:16px;" data-i18n="courses-list-title">Ders Listesi</h2>
+
+      <div style="margin-bottom:32px;">
+        <h3 style="font-family:var(--font-mono); font-size:1.1rem; color:var(--accent-cyan);" data-i18n="courses-grad-title">Yüksek Lisans Dersleri</h3>
+        <div class="grid grid-3" style="margin-top:12px;">
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-g-1">Graph Theory and Complex Networks I–II</span></div>
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-g-2">Mathematical Analysis and Design of Algorithms I</span></div>
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-g-3">Advanced Data Structures</span></div>
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-g-4">Extremal Problems and Special Graphs</span></div>
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-g-5">High‑Performance Computing</span></div>
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-g-6">Communication Networks and Vulnerability</span></div>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-family:var(--font-mono); font-size:1.1rem; color:var(--accent-cyan);" data-i18n="courses-phd-title">Doktora Dersleri</h3>
+        <div class="grid grid-3" style="margin-top:12px;">
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-phd-1">Algebraic Graph Algorithms</span></div>
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-phd-2">Measurement Parameters in Graph Theory</span></div>
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-phd-3">Machine Learning</span></div>
+          <div class="card" style="padding:10px 14px;"><span data-i18n="course-phd-4">Algorithm Complexity Analysis</span></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <small data-i18n="footer-copyright">© 2026 Ahmet Çolak. Tüm hakları saklıdır.</small>
+      <ul class="footer-links">
+        <li><a href="mailto:ahmetcolakofficial@hotmail.com" data-i18n="footer-email">E-posta</a></li>
+        <li><a href="https://linkedin.com/in/ahmetc0lak" target="_blank" rel="noopener" data-i18n="footer-linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/ahmetcolak251113" target="_blank" rel="noopener" data-i18n="footer-github">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<script src="assets/js/graph-bg.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

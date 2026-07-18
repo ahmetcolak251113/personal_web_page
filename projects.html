@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects & Demos · Ahmet Çolak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<canvas id="graph-bg"></canvas>
+<div class="bg-vignette"></div>
+
+<div class="wrap">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="dot"></span>Ahmet Çolak</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımda</a></li>
+        <li><a href="courses.html" data-i18n="nav-courses">Akademik Çalışmalar</a></li>
+        <li><a href="projects.html" class="active" data-i18n="nav-projects">Projeler</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <a href="assets/cv/Ahmet_Colak_CV.pdf" target="_blank" class="btn btn-primary btn-sm" style="margin-left:20px;" data-i18n="nav-cv">CV İndir</a>
+      <button class="btn btn-ghost btn-sm" id="lang-toggle" data-lang="tr" style="margin-left:12px;">🇬🇧 EN</button>
+      <button class="nav-toggle" aria-label="Menu toggle">☰</button>
+    </div>
+  </nav>
+
+  <header class="hero container" style="min-height:50vh; padding-top:160px;">
+    <span class="eyebrow" data-i18n="projects-eyebrow">Portfolyo</span>
+    <h1><span data-i18n="projects-title-part1">Projeler</span> & <span class="gradient-text" data-i18n="projects-title-part2">Demolar</span></h1>
+    <p class="lead" data-i18n="projects-lead">FastAPI, PyTorch ve TensorFlow ile geliştirdiğim projelerin çalışan demo versiyonları.</p>
+  </header>
+
+  <section class="section container reveal" style="border-top:none; padding-top:0;">
+    <div class="grid grid-3">
+      <div class="card">
+        <h3 data-i18n="project1-title">RAG Arama Motoru</h3>
+        <p data-i18n="project1-desc">BM25/TF‑IDF, anlamsal arama ve CLIP çokkipli aramayı birleştiren hibrit sıralamalı (Weighted + RRF) film arama sistemi.</p>
+        <p style="color:var(--accent-cyan); font-size:.85rem; margin:8px 0 0;" data-i18n="project1-note">→ Müşteri destek ve doküman aramaya doğrudan uygulanabilir.</p>
+        <div class="tag-row"><span class="tag">RAG</span><span class="tag">CLIP</span><span class="tag">NLP</span></div>
+        <span class="tag" style="border-color:var(--accent-violet); color:var(--accent-violet); margin-top:14px;" data-i18n="project-badge">Demo Yakında</span>
+      </div>
+      <div class="card">
+        <h3 data-i18n="project2-title">DomiPlan: Ders Programlama Uzman Sistemi</h3>
+        <p data-i18n="project2-desc">Google OR‑Tools CP‑SAT çözücüsü ile NP‑Zor okul ders programlama problemini optimize eden çok kiracılı FastAPI backend.</p>
+        <p style="color:var(--accent-cyan); font-size:.85rem; margin:8px 0 0;" data-i18n="project2-note">→ Günler süren manuel programlamayı otomatikleştirir.</p>
+        <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">OR‑Tools</span></div>
+        <span class="tag" style="border-color:var(--accent-violet); color:var(--accent-violet); margin-top:14px;" data-i18n="project-badge">Demo Yakında</span>
+      </div>
+      <div class="card">
+        <h3 data-i18n="project3-title">Tarımsal Arazi Sınırı Tespiti</h3>
+        <p data-i18n="project3-desc">Uydu görüntüleri (.tif) ve GeoJSON verisinden Random Forest ve CNN ile arazi sınırı tespiti (F1‑Score: 0.83).</p>
+        <p style="color:var(--accent-cyan); font-size:.85rem; margin:8px 0 0;" data-i18n="project3-note">→ Tarım sigortası ve arazi denetiminde manuel ölçümü ortadan kaldırır.</p>
+        <div class="tag-row"><span class="tag">CNN</span><span class="tag">Random Forest</span><span class="tag">GIS</span></div>
+        <span class="tag" style="border-color:var(--accent-violet); color:var(--accent-violet); margin-top:14px;" data-i18n="project-badge">Demo Yakında</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <small data-i18n="footer-copyright">© 2026 Ahmet Çolak. Tüm hakları saklıdır.</small>
+      <ul class="footer-links">
+        <li><a href="mailto:ahmetcolakofficial@hotmail.com" data-i18n="footer-email">E-posta</a></li>
+        <li><a href="https://linkedin.com/in/ahmetc0lak" target="_blank" rel="noopener" data-i18n="footer-linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/ahmetcolak251113" target="_blank" rel="noopener" data-i18n="footer-github">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<script src="assets/js/graph-bg.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

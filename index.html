@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ahmet Çolak · Akademik & Portfolio</title>
+<meta name="description" content="Ahmet Çolak — AI researcher, data scientist, and PhD candidate at Ege University. Academic works, projects, and lecture notes." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<canvas id="graph-bg"></canvas>
+<div class="bg-vignette"></div>
+
+<div class="wrap">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="dot"></span>Ahmet Çolak</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımda</a></li>
+        <li><a href="courses.html" data-i18n="nav-courses">Akademik Çalışmalar</a></li>
+        <li><a href="projects.html" data-i18n="nav-projects">Projeler</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <a href="assets/cv/Ahmet_Colak_CV.pdf" target="_blank" class="btn btn-primary btn-sm" style="margin-left:20px;" data-i18n="nav-cv">CV İndir</a>
+      <button class="btn btn-ghost btn-sm" id="lang-toggle" data-lang="tr" style="margin-left:12px;">🇬🇧 EN</button>
+      <button class="nav-toggle" aria-label="Menu toggle">☰</button>
+    </div>
+  </nav>
+
+  <header class="hero container">
+    <span class="eyebrow">AI · GNN · LLM · ML</span>
+    <h1><span data-i18n="hero-title-part1">Yapay zekayı öğreniyorum, araştırıyorum ve</span> <span class="gradient-text" data-i18n="hero-title-part2">geliştiriyorum...</span></h1>
+    <p class="lead" data-i18n="hero-lead">Ege Üniversitesi'nde Bilgi Teknolojileri doktora öğrencisiyim. Geometric Deep Learning, Graph Neural Networks ve yapısal biyoinformatik üzerine çalışıyor, matematiksel temelli ve ölçeklenebilir yapay zeka çözümleri geliştiriyorum.</p>
+    <div class="hero-actions">
+      <a href="courses.html" class="btn btn-primary" data-i18n="hero-courses-btn">Akademik Çalışmalar</a>
+      <a href="projects.html" class="btn btn-ghost" data-i18n="hero-projects-btn">Projeleri Gör</a>
+      <a href="https://github.com/ahmetcolak251113" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="hero-github-btn">GitHub</a>
+    </div>
+
+    <div class="hero-meta">
+      <div><span class="num">2.96</span><span class="label" data-i18n="meta-bs-gpa-label">Lisans GPA</span></div>
+      <div><span class="num">4.00</span><span class="label" data-i18n="meta-ms-gpa-label">Yüksek Lisans GPA</span></div>
+      <div><span class="num">3.75</span><span class="label" data-i18n="meta-phd-gpa-label">Doktora GPA</span></div>
+    </div>
+  </header>
+
+  <section class="section container reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="section-find-eyebrow">Ne bulacaksın</span>
+        <h2 data-i18n="section-content-title">Site içeriği</h2>
+      </div>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3 data-i18n="card-courses-title">Akademik Dersler</h3>
+        <p data-i18n="card-courses-desc">Lisans, yüksek lisans ve doktora programlarında aldığım tüm derslerin listesi.</p>
+        <div class="tag-row"><span class="tag" data-i18n="card-courses-tag1">Lisans</span><span class="tag" data-i18n="card-courses-tag2">YL / Doktora</span></div>
+        <a href="courses.html" class="btn btn-ghost btn-sm" data-i18n="card-courses-btn">Akademik Çalışmalara Git →</a>
+      </div>
+      <div class="card">
+        <h3 data-i18n="card-projects-title">Projeler ve Demolar</h3>
+        <p data-i18n="card-projects-desc">FastAPI, PyTorch ve TensorFlow ile geliştirdiğim, tarayıcıdan çalıştırabildiğin demolar.</p>
+        <div class="tag-row"><span class="tag" data-i18n="card-projects-tag1">FastAPI</span><span class="tag" data-i18n="card-projects-tag2">PyTorch</span></div>
+        <a href="projects.html" class="btn btn-ghost btn-sm" data-i18n="card-projects-btn">Demoları Gör →</a>
+      </div>
+      <div class="card">
+        <h3 data-i18n="card-about-title">Hakkımda</h3>
+        <p data-i18n="card-about-desc">Eğitim zaman çizelgesi, teknik yetkinlikler ve yayınlar.</p>
+        <div class="tag-row"><span class="tag" data-i18n="card-about-tag1">CV</span><span class="tag" data-i18n="card-about-tag2">Yayınlar</span></div>
+        <a href="about.html" class="btn btn-ghost btn-sm" data-i18n="card-about-btn">Profili Gör →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <small data-i18n="footer-copyright">© 2026 Ahmet Çolak. Tüm hakları saklıdır.</small>
+      <ul class="footer-links">
+        <li><a href="mailto:ahmetcolakofficial@hotmail.com" data-i18n="footer-email">E-posta</a></li>
+        <li><a href="https://linkedin.com/in/ahmetc0lak" target="_blank" rel="noopener" data-i18n="footer-linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/ahmetcolak251113" target="_blank" rel="noopener" data-i18n="footer-github">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<script src="assets/js/graph-bg.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

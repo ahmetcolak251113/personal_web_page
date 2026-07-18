@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About · Ahmet Çolak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<canvas id="graph-bg"></canvas>
+<div class="bg-vignette"></div>
+
+<div class="wrap">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="dot"></span>Ahmet Çolak</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav-about">Hakkımda</a></li>
+        <li><a href="courses.html" data-i18n="nav-courses">Akademik Çalışmalar</a></li>
+        <li><a href="projects.html" data-i18n="nav-projects">Projeler</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <a href="assets/cv/Ahmet_Colak_CV.pdf" target="_blank" class="btn btn-primary btn-sm" style="margin-left:20px;" data-i18n="nav-cv">CV İndir</a>
+      <button class="btn btn-ghost btn-sm" id="lang-toggle" data-lang="tr" style="margin-left:12px;">🇬🇧 EN</button>
+      <button class="nav-toggle" aria-label="Menu toggle">☰</button>
+    </div>
+  </nav>
+
+  <header class="hero container" style="min-height:60vh; padding-top:160px;">
+    <div style="display:flex; gap:40px; align-items:center; flex-wrap:wrap;">
+      <img src="assets/images/profile.jpg" alt="Ahmet Çolak" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:2px solid var(--line); flex-shrink:0;">
+      <div style="flex:1; min-width:260px;">
+        <span class="eyebrow" data-i18n="about-eyebrow">Hakkımda</span>
+        <h1>Ahmet <span class="gradient-text">Çolak</span></h1>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:32px;" data-i18n="about-lead">AI araştırmacısı, veri bilimci ve Ege Üniversitesi International Computer Institute'ta Bilgi Teknolojileri doktora öğrencisiyim. Çalışmalarım Geometric Deep Learning, Graph Neural Networks (GNN'ler), Spektral Graf Teorisi ve yapısal biyoinformatik (özellikle protein dinamikleri) üzerine yoğunlaşıyor. Matematiksel temelli, deterministik ve ölçeklenebilir yapay zeka çözümleri tasarlamaya odaklanıyorum.</p>
+  </header>
+
+  <section class="section container reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="about-timeline-eyebrow">Zaman çizelgesi</span>
+        <h2 data-i18n="about-timeline-title">Eğitim</h2>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="period">02.02.2026 — Devam ediyor</span>
+        <h3 data-i18n="about-edu1-title">Doktora, Bilgi Teknolojisi</h3>
+        <p data-i18n="about-edu1-desc">Ege Üniversitesi, International Computer Institute · İzmir</p>
+      </div>
+      <div class="timeline-item">
+        <span class="period">10.09.2024 — 16.01.2026</span>
+        <h3 data-i18n="about-edu2-title">Yüksek Lisans, Bilgisayar Bilimleri (Tezli)</h3>
+        <p data-i18n="about-edu2-desc">Ege Üniversitesi, Fen Bilimleri Enstitüsü · İzmir — GNO: 4.00</p>
+        <p style="margin-top:8px; font-size:.88rem;" data-i18n="about-edu2-thesis">Tez: <em>"Çizge Teorisi ile Karmaşık Sistemlerin Zedelenebilirlik Analizi: Kısıtlı Ayrık Baskınlık Yaklaşımı"</em> — bu çalışma RDD tabanlı topolojik maskeleme projesinin temelini oluşturuyor.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="period">03.09.2018 — 23.02.2024</span>
+        <h3 data-i18n="about-edu3-title">Lisans, Matematik</h3>
+        <p data-i18n="about-edu3-desc">İzmir Yüksek Teknoloji Enstitüsü · İzmir — GPA: 2.96, 2 Onur Belgesi</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="about-skills-eyebrow">Yetkinlikler</span>
+        <h2 data-i18n="about-skills-title">Teknik araçlar</h2>
+      </div>
+    </div>
+    <div class="skill-cloud">
+      <span class="tag">Python</span>
+      <span class="tag">Docker</span>
+      <span class="tag">PyTorch Geometric</span>
+      <span class="tag">R</span>
+      <span class="tag">MATLAB</span>
+      <span class="tag">SQL</span>
+      <span class="tag">LaTeX</span>
+      <span class="tag">WSL2</span>
+      <span class="tag">FastAPI</span>
+      <span class="tag">Geometric Deep Learning</span>
+      <span class="tag">Spektral Graf Teorisi</span>
+      <span class="tag">Algoritma Analizi</span>
+      <span class="tag">High‑Performance Computing</span>
+    </div>
+  </section>
+
+  <!-- YENİ "Akademik araştırma" bölümü – sadece başlıklar + buton -->
+  <section class="section container reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="about-research-eyebrow">Akademik araştırma</span>
+        <h2 data-i18n="about-research-title">Öne çıkan çalışmalar</h2>
+      </div>
+    </div>
+    <div class="grid grid-2" style="margin-bottom:24px;">
+      <div class="card" style="border-color:var(--accent-cyan); padding:16px 20px;">
+        <span class="note-code">PhD Report · 2026</span>
+        <h3 data-i18n="about-research1-title">RDD Tabanlı Topolojik Maskeleme</h3>
+      </div>
+      <div class="card" style="border-color:var(--accent-violet); padding:16px 20px;">
+        <span class="note-code">PhD Report · 2026</span>
+        <h3 data-i18n="about-research2-title">Cebirsel Değişmezler ve GNN Gömülerinin Hibrit Füzyonu</h3>
+      </div>
+      <div class="card" style="padding:16px 20px;">
+        <span class="note-code">RAG · NLP</span>
+        <h3 data-i18n="about-research3-title">RAG Arama Motoru</h3>
+      </div>
+      <div class="card" style="padding:16px 20px;">
+        <span class="note-code">FastAPI · OR‑Tools</span>
+        <h3 data-i18n="about-research4-title">DomiPlan: Çok Kiracılı Ders Programı Uzman Sistemi</h3>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a href="courses.html" class="btn btn-primary" data-i18n="about-research-btn">Akademik Çalışmalara Git →</a>
+    </div>
+  </section>
+
+  <section class="section container reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="about-experience-eyebrow">Deneyim</span>
+        <h2 data-i18n="about-experience-title">İş Deneyimi</h2>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="period">2025</span>
+        <h3 data-i18n="about-job-title">Veri Bilimci — Andromedy Digital Solutions</h3>
+        <p data-i18n="about-job-desc">İzmir — Uydu görüntüleri (.tif) ve GeoJSON verisinden tarımsal arazi sınırı tespiti (Random Forest ve CNN, F1‑Score: 0.83).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="about-certs-eyebrow">Belgeler</span>
+        <h2 data-i18n="about-certs-title">Sertifikalar</h2>
+      </div>
+    </div>
+
+    <div class="grid grid-3">
+      <div class="card">
+        <span class="note-code">Coursera · Google</span>
+        <h3 data-i18n="about-cert1-title">Google Proje Yönetimi</h3>
+        <p data-i18n="about-cert1-desc">Profesyonel Sertifika — 6 kurs: proje başlatma, planlama, yürütme ve çevik proje yönetimi.</p>
+        <div class="tag-row"><span class="tag">Haz 2026</span></div>
+      </div>
+      <div class="card">
+        <span class="note-code">Turk Student Community</span>
+        <h3 data-i18n="about-cert2-title">LLM ve Yapay Zeka Sertifikası</h3>
+        <p data-i18n="about-cert2-desc">100+ saatlik program: Transformer mimarileri, RAG, LangChain, RLHF, model sıkıştırma ve Docker/Streamlit ile üretim dağıtımı.</p>
+        <div class="tag-row"><span class="tag">Mar 2026</span><span class="tag">No: LLM‑2026‑0028</span></div>
+      </div>
+      <div class="card">
+        <span class="note-code">YÖK · Veri Analizi Okulu</span>
+        <h3 data-i18n="about-cert3-title">Yapay Zeka ve Makine Öğrenmesi — Başarı Belgesi</h3>
+        <p data-i18n="about-cert3-desc">Marmara, ODTÜ, İTÜ ve Boğaziçi Üniversitesi katkılarıyla düzenlenen modül sınavı.</p>
+        <div class="tag-row"><span class="tag">2025–2026</span></div>
+      </div>
+    </div>
+
+    <details style="margin-top:28px;">
+      <summary class="btn btn-ghost btn-sm" style="display:inline-block; cursor:pointer; user-select:none;" data-i18n="about-certs-showall">Tüm Sertifikaları Göster (7)</summary>
+      <div class="grid grid-3" style="margin-top:24px;">
+        <div class="card">
+          <span class="note-code">Yapay Zeka ve Teknoloji Akademisi</span>
+          <h3 data-i18n="about-cert4-title">Derin Öğrenme Eğitimi</h3>
+          <p data-i18n="about-cert4-desc">Tamamlama belgesi.</p>
+          <div class="tag-row"><span class="tag">Tem 2026</span></div>
+        </div>
+        <div class="card">
+          <span class="note-code">Yapay Zeka ve Teknoloji Akademisi</span>
+          <h3 data-i18n="about-cert5-title">Web Uygulamaları Geliştirme Eğitimi</h3>
+          <p data-i18n="about-cert5-desc">Tamamlama belgesi.</p>
+          <div class="tag-row"><span class="tag">Şub 2026</span></div>
+        </div>
+        <div class="card">
+          <span class="note-code">Yapay Zeka ve Teknoloji Akademisi</span>
+          <h3 data-i18n="about-cert6-title">Girişimciler için İK Eğitimi</h3>
+          <p data-i18n="about-cert6-desc">Tamamlama belgesi.</p>
+          <div class="tag-row"><span class="tag">Şub 2026</span></div>
+        </div>
+        <div class="card">
+          <span class="note-code">Yapay Zeka ve Teknoloji Akademisi</span>
+          <h3 data-i18n="about-cert7-title">Girişimciler için Finans Eğitimi</h3>
+          <p data-i18n="about-cert7-desc">Tamamlama belgesi.</p>
+          <div class="tag-row"><span class="tag">Şub 2026</span></div>
+        </div>
+        <div class="card">
+          <span class="note-code">Yapay Zeka ve Teknoloji Akademisi</span>
+          <h3 data-i18n="about-cert8-title">Girişimciler için Hukuk Eğitimi</h3>
+          <p data-i18n="about-cert8-desc">Tamamlama belgesi.</p>
+          <div class="tag-row"><span class="tag">Şub 2026</span></div>
+        </div>
+        <div class="card">
+          <span class="note-code">Yapay Zeka ve Teknoloji Akademisi</span>
+          <h3 data-i18n="about-cert9-title">Temel Girişimcilik Eğitimi</h3>
+          <p data-i18n="about-cert9-desc">Tamamlama belgesi.</p>
+          <div class="tag-row"><span class="tag">Şub 2026</span></div>
+        </div>
+        <div class="card">
+          <span class="note-code">Europäisches Bildungsinstitut</span>
+          <h3 data-i18n="about-cert10-title">Bilgi Teknolojileri Stajı</h3>
+          <p data-i18n="about-cert10-desc">Uygulamalı Excel, Photoshop, AutoCAD Teknikleri, Python Kodlama.</p>
+          <div class="tag-row"><span class="tag">TNC Group</span></div>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <!-- Odaklandıklarım -->
+  <section class="section container reveal">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow" data-i18n="focus-eyebrow">Güncel</span>
+        <h2 data-i18n="focus-title">Odaklandıklarım</h2>
+      </div>
+    </div>
+    <div class="card" style="padding:32px;">
+      <p style="white-space:pre-line; margin:0; font-size:1.05rem; line-height:1.7;" data-i18n="focus-text">
+        Halihazırda Yapay Zeka ve Teknoloji Akademisinin Bootcamp çalışmasındayım. Ekip arkadaşlarımla beraber yeterli desteği gördüğümüzde dijital gardrobumuzu hizmetinize sunmayı istiyoruz. Bu projede VTON ve LLM yeteneklerini birleştirip size harika bir stilist çıkarmak istiyoruz.
+
+        Diğer yandan Doktorada Ekip arkadaşlarımla beraber Proteinlerin geçiş yolu kestirimini yapmaya çalışıyoruz biraz büyük çaplı bir proje ama ümidimiz var.
+
+        Ayrıca Türkiye Yapay Zeka Akademisi ve Huawei Student Developers (HSD) iş birliğiyle düzenlenen Veri Bilimi ve Makine Öğrenmesi Bootcamp'i programına kabul edildim. Burada da eğitimime devam edeceğim. Tekrardan ziyan gelmez diyelim.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <small data-i18n="footer-copyright">© 2026 Ahmet Çolak. Tüm hakları saklıdır.</small>
+      <ul class="footer-links">
+        <li><a href="mailto:ahmetcolakofficial@hotmail.com" data-i18n="footer-email">E-posta</a></li>
+        <li><a href="https://linkedin.com/in/ahmetc0lak" target="_blank" rel="noopener" data-i18n="footer-linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/ahmetcolak251113" target="_blank" rel="noopener" data-i18n="footer-github">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<script src="assets/js/graph-bg.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

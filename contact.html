@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact · Ahmet Çolak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<canvas id="graph-bg"></canvas>
+<div class="bg-vignette"></div>
+
+<div class="wrap">
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><span class="dot"></span>Ahmet Çolak</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
+        <li><a href="about.html" data-i18n="nav-about">Hakkımda</a></li>
+        <li><a href="courses.html" data-i18n="nav-courses">Akademik Çalışmalar</a></li>
+        <li><a href="projects.html" data-i18n="nav-projects">Projeler</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav-contact">İletişim</a></li>
+      </ul>
+      <a href="assets/cv/Ahmet_Colak_CV.pdf" target="_blank" class="btn btn-primary btn-sm" style="margin-left:20px;" data-i18n="nav-cv">CV İndir</a>
+      <button class="btn btn-ghost btn-sm" id="lang-toggle" data-lang="tr" style="margin-left:12px;">🇬🇧 EN</button>
+      <button class="nav-toggle" aria-label="Menu toggle">☰</button>
+    </div>
+  </nav>
+
+  <header class="hero container" style="min-height:40vh; padding-top:160px;">
+    <span class="eyebrow" data-i18n="contact-eyebrow">İletişim</span>
+    <h1 data-i18n="contact-title">Konuşalım</h1>
+    <p class="lead" data-i18n="contact-lead">Bir proje, işbirliği fikri veya sadece merhaba demek için yazabilirsin.</p>
+  </header>
+
+  <section class="section container reveal" style="border-top:none; padding-top:0;">
+    <div class="grid grid-2">
+      <form id="contact-form" class="form-grid" novalidate>
+        <div>
+          <label for="name" data-i18n="contact-name-label">Ad Soyad</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email" data-i18n="contact-email-label">E-posta</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message" data-i18n="contact-message-label">Mesaj</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary" data-i18n="contact-submit-btn">Mesajı Gönder</button>
+          <p id="form-status" class="form-status"></p>
+        </div>
+      </form>
+
+      <div class="contact-links">
+        <a href="mailto:ahmetcolakofficial@hotmail.com" class="contact-link">
+          <div>
+            <strong data-i18n="contact-email-label">E-posta</strong>
+            <p style="margin:0;">ahmetcolakofficial@hotmail.com</p>
+          </div>
+        </a>
+        <a href="https://linkedin.com/in/ahmetc0lak" target="_blank" rel="noopener" class="contact-link">
+          <div>
+            <strong data-i18n="contact-linkedin-label">LinkedIn</strong>
+            <p style="margin:0;">linkedin.com/in/ahmetc0lak</p>
+          </div>
+        </a>
+        <a href="https://github.com/ahmetcolak251113" target="_blank" rel="noopener" class="contact-link">
+          <div>
+            <strong data-i18n="contact-github-label">GitHub</strong>
+            <p style="margin:0;">github.com/ahmetcolak251113</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <small data-i18n="footer-copyright">© 2026 Ahmet Çolak. Tüm hakları saklıdır.</small>
+      <ul class="footer-links">
+        <li><a href="mailto:ahmetcolakofficial@hotmail.com" data-i18n="footer-email">E-posta</a></li>
+        <li><a href="https://linkedin.com/in/ahmetc0lak" target="_blank" rel="noopener" data-i18n="footer-linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/ahmetcolak251113" target="_blank" rel="noopener" data-i18n="footer-github">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+<script src="assets/js/graph-bg.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
