@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --------------------------------------------------------------
   const translations = {
     tr: {
-      "project-demo-btn": "Demoyu Dene"
+      "project-demo-btn": "Demoyu Dene →",
       "nav-home": "Ana Sayfa",
       "nav-about": "Hakkımda",
       "nav-courses": "Akademik Çalışmalar",
@@ -152,6 +152,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "project3-title": "Tarımsal Arazi Sınırı Tespiti",
       "project3-desc": "Uydu görüntüleri (.tif) ve GeoJSON verisinden Random Forest ve CNN ile arazi sınırı tespiti (F1‑Score: 0.83).",
       "project3-note": "→ Tarım sigortası ve arazi denetiminde manuel ölçümü ortadan kaldırır.",
+      "project4-title": "Çocuklar için Problem Çözücü",
+      "project4-desc": "Çocukların sorduğu sorulara hikayeleştirerek anlatan web uygulaması.",
+      "project4-note": "→ Çocuklara daha kolay bir anlatım sağlar.",
       "project-badge": "Demo Yakında",
 
       // --- Contact (İletişim) ---
@@ -166,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact-github-label": "GitHub"
     },
     en: {
-      "project-demo-btn": "Try Demo"
+      "project-demo-btn": "Try Demo →",
       "nav-home": "Home",
       "nav-about": "About",
       "nav-courses": "Academic Work",
@@ -309,6 +312,9 @@ document.addEventListener("DOMContentLoaded", () => {
       "project3-title": "Agricultural Land Boundary Detection",
       "project3-desc": "Detection of agricultural land boundaries from satellite imagery (.tif) and GeoJSON data using Random Forest and CNN models (F1‑Score: 0.83).",
       "project3-note": "→ Eliminates manual measurement in agricultural insurance and land inspection.",
+      "project4-title": "Problem Solver for Kids",
+      "project4-desc": "A web application that explains children's questions through storytelling.",
+      "project4-note": "→ Provides easier explanations for children.",
       "project-badge": "Demo Coming Soon",
 
       "contact-eyebrow": "Contact",
@@ -416,7 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
         message: form.message.value,
       };
       try {
-        const res = await fetch("https://formspree.io/f/xdaqgdoy", { // <-- Buraya kendi URL'ni yaz
+        const res = await fetch("https://formspree.io/f/xdaqgdoy", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
