@@ -324,17 +324,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // --------------------------------------------------------------
   // 2. LANGUAGE SWITCH ENGINE
   // --------------------------------------------------------------
-  const toggleBtn = document.getElementById("lang-toggle");
+  const toggleBtns = document.querySelectorAll(".lang-toggle-btn");
   let currentLang = localStorage.getItem("lang") || "tr";
 
   function applyLanguage(lang) {
     currentLang = lang;
     document.documentElement.lang = lang === "tr" ? "tr" : "en";
     localStorage.setItem("lang", lang);
-    if (toggleBtn) {
-      toggleBtn.textContent = lang === "tr" ? "🇬🇧 EN" : "🇹🇷 TR";
-      toggleBtn.dataset.lang = lang;
-    }
+    toggleBtns.forEach((btn) => {
+      btn.textContent = lang === "tr" ? "🇬🇧 EN" : "🇹🇷 TR";
+      btn.dataset.lang = lang;
+    });
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.dataset.i18n;
       if (translations[lang] && translations[lang][key] !== undefined) {
@@ -345,22 +345,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyLanguage(currentLang);
 
-  if (toggleBtn) {
-    toggleBtn.addEventListener("click", () => {
+  toggleBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
       const nextLang = currentLang === "tr" ? "en" : "tr";
       applyLanguage(nextLang);
     });
-  }
+  });
 
   // --------------------------------------------------------------
   // 3. MOBILE NAV TOGGLE
   // --------------------------------------------------------------
   const toggle = document.querySelector(".nav-toggle");
   const links = document.querySelector(".nav-links");
+  const navEl = document.querySelector(".nav");
+
+  function setNavHeight() {
+    if (navEl) {
+      document.documentElement.style.setProperty("--nav-h", navEl.offsetHeight + "px");
+    }
+  }
+  setNavHeight();
+  window.addEventListener("resize", setNavHeight, { passive: true });
+
   if (toggle && links) {
-    toggle.addEventListener("click", () => links.classList.toggle("open"));
-    links.querySelectorAll("a").forEach((a) =>
-      a.addEventListener("click", () => links.classList.remove("open"))
+    toggle.addEventListener("click", () => {
+      setNavHeight();
+      links.classList.toggle("open");
+    });
+    links.querySelectorAll("a, button").forEach((el) =>
+      el.addEventListener("click", () => links.classList.remove("open"))
     );
   }
 
