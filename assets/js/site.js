@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // --------------------------------------------------------------
   const translations = {
     tr: {
+      "project-demo-btn": "Demoyu Dene"
       "nav-home": "Ana Sayfa",
       "nav-about": "Hakkımda",
       "nav-courses": "Akademik Çalışmalar",
@@ -165,6 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact-github-label": "GitHub"
     },
     en: {
+      "project-demo-btn": "Try Demo"
       "nav-home": "Home",
       "nav-about": "About",
       "nav-courses": "Academic Work",
