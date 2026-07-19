@@ -17,22 +17,16 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo"><span class="dot"></span>Ahmet Çolak</a>
-      <div class="nav-right">
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav-home">Ana Sayfa</a></li>
         <li><a href="about.html" data-i18n="nav-about">Hakkımda</a></li>
         <li><a href="courses.html" data-i18n="nav-courses">Akademik Çalışmalar</a></li>
         <li><a href="projects.html" class="active" data-i18n="nav-projects">Projeler</a></li>
         <li><a href="contact.html" data-i18n="nav-contact">İletişim</a></li>
-        <li class="nav-cv-mobile">
-          <a href="assets/cv/Ahmet_Colak_CV.pdf" target="_blank" class="btn btn-primary btn-sm" data-i18n="nav-cv">CV İndir</a>
-          <button class="btn btn-ghost btn-sm lang-toggle-btn" data-lang="tr">🇬🇧 EN</button>
-        </li>
       </ul>
       <a href="assets/cv/Ahmet_Colak_CV.pdf" target="_blank" class="btn btn-primary btn-sm" style="margin-left:20px;" data-i18n="nav-cv">CV İndir</a>
-      <button class="btn btn-ghost btn-sm lang-toggle-btn" id="lang-toggle" data-lang="tr" style="margin-left:12px;">🇬🇧 EN</button>
+      <button class="btn btn-ghost btn-sm" id="lang-toggle" data-lang="tr" style="margin-left:12px;">🇬🇧 EN</button>
       <button class="nav-toggle" aria-label="Menu toggle">☰</button>
-      </div>
     </div>
   </nav>
 
@@ -44,6 +38,8 @@
 
   <section class="section container reveal" style="border-top:none; padding-top:0;">
     <div class="grid grid-3">
+
+      <!-- Proje 1: RAG Arama Motoru -->
       <div class="card">
         <h3 data-i18n="project1-title">RAG Arama Motoru</h3>
         <p data-i18n="project1-desc">BM25/TF‑IDF, anlamsal arama ve CLIP çokkipli aramayı birleştiren hibrit sıralamalı (Weighted + RRF) film arama sistemi.</p>
@@ -51,6 +47,8 @@
         <div class="tag-row"><span class="tag">RAG</span><span class="tag">CLIP</span><span class="tag">NLP</span></div>
         <span class="tag" style="border-color:var(--accent-violet); color:var(--accent-violet); margin-top:14px;" data-i18n="project-badge">Demo Yakında</span>
       </div>
+
+      <!-- Proje 2: DomiPlan -->
       <div class="card">
         <h3 data-i18n="project2-title">DomiPlan: Ders Programlama Uzman Sistemi</h3>
         <p data-i18n="project2-desc">Google OR‑Tools CP‑SAT çözücüsü ile NP‑Zor okul ders programlama problemini optimize eden çok kiracılı FastAPI backend.</p>
@@ -58,6 +56,8 @@
         <div class="tag-row"><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">OR‑Tools</span></div>
         <span class="tag" style="border-color:var(--accent-violet); color:var(--accent-violet); margin-top:14px;" data-i18n="project-badge">Demo Yakında</span>
       </div>
+
+      <!-- Proje 3: Tarımsal Arazi Sınırı Tespiti -->
       <div class="card">
         <h3 data-i18n="project3-title">Tarımsal Arazi Sınırı Tespiti</h3>
         <p data-i18n="project3-desc">Uydu görüntüleri (.tif) ve GeoJSON verisinden Random Forest ve CNN ile arazi sınırı tespiti (F1‑Score: 0.83).</p>
@@ -65,14 +65,18 @@
         <div class="tag-row"><span class="tag">CNN</span><span class="tag">Random Forest</span><span class="tag">GIS</span></div>
         <span class="tag" style="border-color:var(--accent-violet); color:var(--accent-violet); margin-top:14px;" data-i18n="project-badge">Demo Yakında</span>
       </div>
+
+      <!-- Proje 4: Çocuklar için Problem Çözücü (Streamlit) -->
       <div class="card">
         <h3 data-i18n="project4-title">Çocuklar için Problem Çözücü</h3>
-        <p data-i18n="project4-desc">Çocukların sorduğu sorulara hikayeleştirerek anlatan web uygulaması</p>
+        <p data-i18n="project4-desc">Çocukların sorduğu sorulara hikayeleştirerek anlatan web uygulaması.</p>
         <p style="color:var(--accent-cyan); font-size:.85rem; margin:8px 0 0;" data-i18n="project4-note">→ Çocuklara daha kolay bir anlatım sağlar.</p>
         <div class="tag-row"><span class="tag">Streamlit</span><span class="tag">Gemini</span><span class="tag">LLM</span></div>
         <a href="https://kidsproblem-tyd5uygkkkekcvybcrgfv2.streamlit.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm" style="margin-top:14px;">
-  Demoyu Dene →</a>      
+          Demoyu Dene →
+        </a>
       </div>
+
     </div>
   </section>
 
