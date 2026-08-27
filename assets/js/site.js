@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // --- About (Hakkımda) ---
       "about-eyebrow": "Hakkımda",
-      "about-lead": "AI araştırmacısı, veri bilimci ve Ege Üniversitesi International Computer Institute'ta Bilgi Teknolojileri doktora öğrencisiyim. Çalışmalarım Geometric Deep Learning, Graph Neural Networks (GNN'ler), Spektral Graf Teorisi ve yapısal biyoinformatik (özellikle protein dinamikleri) üzerine yoğunlaşıyor. Matematiksel temelli, deterministik ve ölçeklenebilir yapay zeka çözümleri tasarlamaya odaklanıyorum.",
+      "about-lead": "Ege Üniversitesi Uluslararası Bilgisayar Enstitüsü'nde Bilgi Teknolojileri alanında doktora öğrencisiyim ve veri bilimciyim. Matematik tabanlı bilgisayar bilimleri yüksek lisans geçmişimin de etkisiyle, karmaşık sistemlerin analizini daima güçlü matematiksel temellere ve çizge teorisine oturtuyorum.\n\nÇalışmalarımın merkezinde Geometric Deep Learning, Graph Neural Networks (GCN, GIN, EGNN gibi mimariler) ve Spektral Çizge Teorisi bulunuyor. Kara kutu (black-box) algoritmalar yerine; arkasındaki topolojik kararları açıklayabildiğim, kısıtlı ayrık baskınlık (RDD) ve spektral boşluk analizi gibi kavramlarla desteklenen yapay zeka çözümleri geliştirmeyi tercih ediyorum.\n\nAlgoritmaların zaman ve bellek karmaşıklığını optimize ederken, teorik matematiğin kesinliğini modern derin öğrenmenin inovasyonuyla birleştirmekten keyif alıyorum.",
       "about-timeline-eyebrow": "Zaman çizelgesi",
       "about-timeline-title": "Eğitim",
       "about-edu1-title": "Doktora, Bilgi Teknolojisi",
@@ -249,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "course-phd-4": "Algorithm Complexity Analysis",
 
       "about-eyebrow": "About Me",
-      "about-lead": "AI researcher, data scientist, and PhD candidate in Information Technology at Ege University's International Computer Institute. My work focuses on Geometric Deep Learning, Graph Neural Networks (GNNs), Spectral Graph Theory, and structural bioinformatics (especially protein dynamics). I aim to design mathematically grounded, deterministic, and scalable AI solutions.",
+      "about-lead": "I am a PhD candidate in Information Technology at Ege University's International Computer Institute and a data scientist. Influenced by my mathematics-based computer science master's background, I always ground the analysis of complex systems in strong mathematical foundations and graph theory.\n\nAt the core of my work lie Geometric Deep Learning, Graph Neural Networks (architectures such as GCN, GIN, and EGNN), and Spectral Graph Theory. Rather than black-box algorithms, I prefer developing AI solutions whose topological decisions I can explain, supported by concepts such as restrained disjunctive domination (RDD) and spectral gap analysis.\n\nI enjoy optimizing the time and memory complexity of algorithms while combining the rigor of theoretical mathematics with the innovation of modern deep learning.",
       "about-timeline-eyebrow": "Timeline",
       "about-timeline-title": "Education",
       "about-edu1-title": "PhD, Information Technology",

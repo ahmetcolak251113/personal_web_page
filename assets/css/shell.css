@@ -28,7 +28,7 @@ body{
 }
 
 p{ color:var(--text-secondary); }
-.lead{ color:#CBD3E0; }
+.lead{ color:#CBD3E0; white-space:pre-line; }
 .gradient-text{
   -webkit-background-clip:text;background-clip:text;color:transparent;
   filter:drop-shadow(0 2px 18px rgba(120,160,230,.25));
