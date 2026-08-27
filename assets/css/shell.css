@@ -35,6 +35,23 @@ p{ color:var(--text-secondary); }
 }
 .hero-meta .num{ color:var(--text-primary); }
 
+/* kill remaining electric-blue remnants and tune contrast */
+:root{
+  --stat:#CBD4E2;
+  --line:#26292F;
+}
+.timeline-item::before{
+  border-color:var(--accent-blue);
+  box-shadow:0 0 12px rgba(159,185,230,.4);
+}
+.tag{ color:var(--text-secondary); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+  outline-color:#C9D6EE;
+}
+.hero-meta .label,.form-status.ok{ letter-spacing:0; }
+.form-status.ok{ color:#8FD4A8; }
+
+
 
 /* ---------- GRAIN ---------- */
 .grain{position:fixed;inset:-50%;z-index:100;pointer-events:none;opacity:.16;width:200%;height:200%;
