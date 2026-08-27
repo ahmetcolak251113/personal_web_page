@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // --- Focus (Odaklandıklarım) ---
       "focus-eyebrow": "Güncel",
       "focus-title": "Odaklandıklarım",
-      "focus-text": "Halihazırda Yapay Zeka ve Teknoloji Akademisinin Bootcamp çalışmasındayım. Ekip arkadaşlarımla beraber yeterli desteği gördüğümüzde dijital gardrobumuzu hizmetinize sunmayı istiyoruz. Bu projede VTON ve LLM yeteneklerini birleştirip size harika bir stilist çıkarmak istiyoruz.\n\nDiğer yandan Doktorada Ekip arkadaşlarımla beraber Proteinlerin geçiş yolu kestirimini yapmaya çalışıyoruz biraz büyük çaplı bir proje ama ümidimiz var.\n\nAyrıca Türkiye Yapay Zeka Akademisi ve Huawei Student Developers (HSD) iş birliğiyle düzenlenen Veri Bilimi ve Makine Öğrenmesi Bootcamp'i programına kabul edildim. Burada da eğitimime devam edeceğim. Tekrardan ziyan gelmez diyelim.",
+      "focus-text": "Şu anda Yapay Zeka ve Veri Bilimi alanlarında dersler hazırlamaktayım.\n\nAyrıca Doktora dersleri için çalışmalar yapmaktayım.",
 
       // --- Projects (Projeler) ---
       "projects-eyebrow": "Portfolyo",
@@ -297,7 +297,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       "focus-eyebrow": "Current",
       "focus-title": "Current Focus",
-      "focus-text": "I am currently participating in the Bootcamp program at the Artificial Intelligence and Technology Academy. Together with my teammates, we aim to offer our digital wardrobe service when we receive sufficient support. In this project, we want to combine VTON and LLM capabilities to create a great stylist for you.\n\nOn the other hand, in my PhD, my teammates and I are working on protein transition path prediction — a large-scale project, but we are hopeful.\n\nAdditionally, I have been accepted into the Data Science and Machine Learning Bootcamp program organized in collaboration with the Turkey AI Academy and Huawei Student Developers (HSD). I will continue my education there as well. Let's say more learning never hurts.",
+      "focus-text": "I am currently preparing courses on Artificial Intelligence and Data Science.\n\nIn addition, I am working on my PhD coursework.",
 
       "projects-eyebrow": "Portfolio",
       "projects-title-part1": "Projects",
