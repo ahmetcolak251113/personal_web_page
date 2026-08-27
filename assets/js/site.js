@@ -156,6 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "project4-desc": "Çocukların sorduğu sorulara hikayeleştirerek anlatan web uygulaması.",
       "project4-note": "→ Çocuklara daha kolay bir anlatım sağlar.",
       "project-badge": "Demo Yakında",
+      "project-github-btn": "GitHub'da Gör →",
 
       // --- Contact (İletişim) ---
       "contact-eyebrow": "İletişim",
@@ -316,6 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "project4-desc": "A web application that explains children's questions through storytelling.",
       "project4-note": "→ Provides easier explanations for children.",
       "project-badge": "Demo Coming Soon",
+      "project-github-btn": "View on GitHub →",
 
       "contact-eyebrow": "Contact",
       "contact-title": "Let's Talk",
